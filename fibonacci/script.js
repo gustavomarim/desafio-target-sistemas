@@ -35,8 +35,8 @@ const renderizarDisplay = (resposta) => {
   const displayResposta = document.querySelector('.resposta');
 
   const mensageResposta = resposta ?
-    'O número informado pertence a sequência'
-    : 'O número informado não pertence a sequência';
+    'O número informado pertence a sequência!'
+    : 'O número informado não pertence a sequência.';
 
   displayResposta.innerText = mensageResposta;
 }

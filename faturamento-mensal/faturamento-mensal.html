@@ -5,41 +5,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/faturamentoMensal.css">
   <title>Faturamento Mensal</title>
 </head>
 
 <body>
+  <main class="container">
+    <h1>FATURAMENTO MENSAL</h1>
+    <p>
+      Dado o valor de faturamento mensal de uma distribuidora, detalhado por estado:
+      <br><br>
+      - SP – R$67.836,43
+      <br>
+      - RJ – R$36.678,66
+      <br>
+      - MG – R$29.229,88
+      <br>
+      - ES – R$27.165,48
+      <br>
+      - Outros – R$19.849,53
+      <br><br>
 
-  <p>
-    Dado o valor de faturamento mensal de uma distribuidora, detalhado por estado:
-    <br>
-    SP – R$67.836,43
-    <br>
-    RJ – R$36.678,66
-    <br>
-    MG – R$29.229,88
-    <br>
-    ES – R$27.165,48
-    <br>
-    Outros – R$19.849,53
-    <br>
+      Escreva um programa na linguagem que desejar onde calcule o percentual de representação que cada estado teve
+      dentro
+      do valor total mensal da distribuidora.
+    </p>
 
-    Escreva um programa na linguagem que desejar onde calcule o percentual de representação que cada estado teve dentro
-    do valor total mensal da distribuidora.
-  </p>
+    <div class="grid-lista">
+      <div class="estado">
+        <h2>Estado - UF </h2>
+        <ul data-estado></ul>
+      </div>
 
-  <div class="container">
-    <div class="estado">
-      <h2>Estado - UF </h2>
-      <ul data-estado></ul>
+      <div class="percentual">
+        <h2>Porcentagem de Faturamento</h2>
+        <ul data-percentual></ul>
+      </div>
     </div>
-
-    <div class="percentual">
-      <h2>% de Faturamento p/ Estado</h2>
-      <ul data-percentual></ul>
-    </div>
-  </div>
+  </main>
 
   <script src="./script.js"></script>
 </body>

@@ -5,14 +5,58 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Home - Desafio Práticos</title>
 </head>
 
 <body>
-  <a href="./fibonacci/fibonacci.html">Fibonacci</a>
-  <a href="./faturamento-diario/faturamento-diario.html">Faturamento Diário</a>
-  <a href="./faturamento-mensal/faturamento-mensal.html">Faturamento Mensal</a>
-  <a href="./inversao-de-caracteres/inversao.html">Inversão de Caracteres</a>
+
+  <header>
+    <h1>Desafios Práticos - Target Solution</h1>
+  </header>
+
+  <main class="container">
+
+    <div class="box cyan">
+      <a href="./fibonacci/fibonacci.html">
+        <h1>Fibonacci</h1>
+        <p>Calcula a sequência de Fibonacci e retorna se o número pertecene ou não a sequência.</p>
+      </a>
+    </div>
+
+    <div class="column-box">
+      <div class="box red">
+        <a href="./faturamento-diario/faturamento-diario.html">
+          <h1>Faturamento Diário</h1>
+          <p>Faz a leitura de um arquivo JSON e retorna: <br>
+            - O menor valor de faturamento ocorrido em um dia do mês; <br>
+            - O maior valor de faturamento ocorrido em um dia do mês; <br>
+            - Número de dias no mês em que o valor de faturamento diário foi superior à média mensal.
+          </p>
+        </a>
+      </div>
+
+      <div class="box orange">
+        <a href="./faturamento-mensal/faturamento-mensal.html">
+          <h1>Faturamento Mensal</h1>
+          <p>Faz a leitura de um arquivo JSON e retorna os dados detalhados de faturamento mensal dos estados contidos no arquivo.</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="box blue">
+      <a href="./inversao-de-caracteres/inversao.html">
+        <h1>Inversão de Caracteres</h1>
+        <p>Lê uma string digitada pelo usuário e retorna os caracteres escritos ao inverso.</p>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por <a href="https://github.com/gustavomarim" target="_blank"> Gustavo
+        Dantas</a></p>
+  </footer>
 </body>
 
 </html>

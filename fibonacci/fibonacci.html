@@ -5,22 +5,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/fibonacci.css">
   <title>Sequência de Fibonacci</title>
 </head>
 
 <body>
-  <p>Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores
-    anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde,
-    informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado
-    pertence ou não a sequência.</p>
+  <main class="container">
+    <div>
+      <h1>FIBONACCI</h1>
+      <p>Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores
+        anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...),
+      <p>escreva um programa na linguagem que desejar onde,
+        informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o</p>
+      <p>número informado
+        pertence ou não a sequência.</p>
 
-  <form action="">
-    <label for="numero">Informe um número para checagem:</label>
-    <input type="number" name="numero" id="numero" placeholder="Informe um número">
-    <input type="reset" value="Limpar">
-  </form>
-
-  <div class="resposta"></div>
+      <div class="resultado">
+        <label for="numero">Informe um número para checagem:</label>
+        <input type="number" name="numero" id="numero" placeholder="Informe um número">
+        <input type="reset" value="Limpar">
+        <div class="resposta"></div>
+      </div>
+    </div>
+  </main>
 
   <script src="./script.js"></script>
 </body>

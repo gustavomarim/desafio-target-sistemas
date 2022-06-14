@@ -5,37 +5,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/faturamentoDiario.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <title>Faturamento Diário</title>
 </head>
 
 <body>
-  <p>Dado um vetor que guarda o valor de faturamento diário de uma distribuidora, faça um programa, na linguagem que
-    desejar, que calcule e retorne:
-    <br>
-    • O menor valor de faturamento ocorrido em um dia do mês;
-    <br>
-    • O maior valor de faturamento ocorrido em um dia do mês;
-    <br>
-    • Número de dias no mês em que o valor de faturamento diário foi superior à média mensal.
-    <br>
-    IMPORTANTE:
-    <br>
-    a) Usar o json ou xml disponível como fonte dos dados do faturamento mensal;
-    <br>
-    b) Podem existir dias sem faturamento, como nos finais de semana e feriados. Estes dias devem ser ignorados no
-    cálculo da média;
-  </p>
+  <main class="container">
+    <div>
+      <h1>FATURAMENTO DIÁRIO</h1>
 
+      <p>Dado um vetor que guarda o valor de faturamento diário de uma distribuidora, faça um programa, na linguagem que
+        desejar, que calcule e retorne:
+        <br>
+        • O menor valor de faturamento ocorrido em um dia do mês;
+        <br>
+        • O maior valor de faturamento ocorrido em um dia do mês;
+        <br>
+        • Número de dias no mês em que o valor de faturamento diário foi superior à média mensal.
+        <br>
+        IMPORTANTE:
+        <br>
+        a) Usar o json ou xml disponível como fonte dos dados do faturamento mensal;
+        <br>
+        b) Podem existir dias sem faturamento, como nos finais de semana e feriados. Estes dias devem ser ignorados no
+        cálculo da média;
+      </p>
 
-  <table>
-    <tr>
-      <th>Menor Faturamento</th>
-      <th>Maior Faturamento</th>
-      <th>Qtde. dias c/ Faturamento > que Mensal</th>
-    </tr>
-    <tr data-dados></tr>
-  </table>
+      <table class="centered responsive-table highlight">
+        <tr>
+          <th>Menor Faturamento Diário</th>
+          <th>Maior Faturamento Diário</th>
+          <th>Qtde dias c/ Faturamento Maior <br> que a Média Mensal</th>
+        </tr>
+        <tr data-dados></tr>
+      </table>
+    </div>
 
+  </main>
 
   <script src="./script.js"></script>
 </body>
