@@ -1,0 +1,23 @@
+[
+  {
+    "uf": "SP",
+    "faturamento": 67836.43
+  },
+  {
+    "uf": "RJ",
+    "faturamento": 36678.66
+  },
+  {
+    "uf": "MG",
+    "faturamento": 29229.88
+  },
+  {
+    "uf": "ES",
+    "faturamento": 27165.48
+  },
+  {
+    "uf": "Outros",
+    "faturamento": 19849.53
+  }
+]
+
