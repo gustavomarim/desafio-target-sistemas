@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/inversao.css">
   <title>Inversão de Caracteres</title>
 </head>
 
 <body>
   <header>
-    <a href="/"> << Voltar</a>
+    <a href="/">
+      << Voltar</a>
   </header>
 
   <main class="container">
@@ -34,15 +34,15 @@
       <div class="resultado">
 
         <label for="">Escreva uma palavra:</label>
-        <input type="text" name="palavra" id="palavra" onfocus="limparCampo">
-        <button id="limpar">Limpar</button>
+        <input type="text" name="palavra" id="palavra" onfocus="limparInput">
+        <button id="limparInput">Limpar</button>
 
-        <div class="resposta"></div>
+        <div class="campo-resposta"></div>
       </div>
     </div>
   </main>
 
-  <script src="./script.js"></script>
+  <script type="module" src="../js/main.js"></script>
 </body>
 
 </html>
