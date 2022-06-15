@@ -5,15 +5,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/inversao.css">
   <title>Inversão de Caracteres</title>
 </head>
 
 <body>
-  <label for="">Escreva uma palavra:</label>
-  <input type="text" name="palavra" id="palavra" onfocus="limparCampo">
-  <button id="limpar">Limpar</button>
+  <header>
+    <a href="/"> << Voltar</a>
+  </header>
 
-  <div class="resposta"></div>
+  <main class="container">
+    <div>
+      <h1>Inversão de String</h1>
+
+      <p>5) Escreva um programa que inverta os caracteres de um string.
+        <br>
+        IMPORTANTE:
+        <br>
+        a) Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser previamente
+        definida
+        no
+        código;
+        <br>
+        b) Evite usar funções prontas, como, por exemplo, reverse;
+      </p>
+
+      <div class="resultado">
+
+        <label for="">Escreva uma palavra:</label>
+        <input type="text" name="palavra" id="palavra" onfocus="limparCampo">
+        <button id="limpar">Limpar</button>
+
+        <div class="resposta"></div>
+      </div>
+    </div>
+  </main>
 
   <script src="./script.js"></script>
 </body>

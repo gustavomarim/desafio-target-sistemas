@@ -49,6 +49,14 @@ header h1 {
   font-weight: 200;
 }
 
+header a {
+  background     : var(--Very-Dark-Blue);
+  padding        : 15px;
+  color          : var(--Very-Light-Gray);
+  text-decoration: none;
+  border-radius  : 6px;
+}
+
 .container {
   display        : flex;
   max-width      : 1440px;

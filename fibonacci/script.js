@@ -1,4 +1,14 @@
+const displayResposta = document.querySelector('.resposta');
 const inputNumero = document.getElementById('numero');
+const btnLimpar = document.querySelector('button');
+
+function limparCampo(e) {
+  inputNumero.innerText = '';
+  inputNumero.value = '';
+  displayResposta.innerText = '';
+}
+
+btnLimpar.addEventListener('click', limparCampo);
 
 const handleKeyUp = (e) => {
   const numero = +e.target.value;
@@ -6,7 +16,6 @@ const handleKeyUp = (e) => {
 }
 
 inputNumero.addEventListener('keyup', handleKeyUp);
-
 
 const fibonacci = (numero) => {
   const termosFibonacci = [];
@@ -21,19 +30,15 @@ const fibonacci = (numero) => {
     proximoValor = valorAnterior;
   }
 
-  console.log(termosFibonacci);
   checarValorFibonacci(numero, termosFibonacci);
 };
 
 const checarValorFibonacci = (numero, termos) => {
   const encontrarValor = termos.includes(numero);
-
   renderizarDisplay(encontrarValor);
 }
 
 const renderizarDisplay = (resposta) => {
-  const displayResposta = document.querySelector('.resposta');
-
   const mensageResposta = resposta ?
     'O número informado pertence a sequência!'
     : 'O número informado não pertence a sequência.';

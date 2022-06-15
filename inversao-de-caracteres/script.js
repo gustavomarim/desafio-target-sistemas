@@ -4,8 +4,12 @@ const resultadoDisplay = document.querySelector('.resposta');
 
 function inverterString(e) {
   const string = e.target.value;
-  const stringReversa = string.split("").reverse().join("");
+  let stringReversa = '';
 
+  for (let i = string.length - 1; i >= 0; i--) {
+    stringReversa += string[i];
+  }
+  
   handleStringReversa(stringReversa);
 }
 
@@ -13,7 +17,7 @@ function handleStringReversa(stringReversa) {
   resultadoDisplay.innerText = stringReversa;
 }
 
-function limparCampo(e){
+function limparCampo(e) {
   resultadoDisplay.innerText = '';
   input.value = '';
 }

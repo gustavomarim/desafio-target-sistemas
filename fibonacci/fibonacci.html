@@ -11,6 +11,11 @@
 </head>
 
 <body>
+  <header>
+    <a href="/">
+      << Voltar</a>
+  </header>
+
   <main class="container">
     <div>
       <h1>FIBONACCI</h1>
@@ -23,8 +28,8 @@
 
       <div class="resultado">
         <label for="numero">Informe um número para checagem:</label>
-        <input type="number" name="numero" id="numero" placeholder="Informe um número">
-        <input type="reset" value="Limpar">
+        <input type="number" name="numero" id="numero" placeholder="Informe um número" onfocus="limparCampo">
+        <button>Limpar</button>
         <div class="resposta"></div>
       </div>
     </div>
